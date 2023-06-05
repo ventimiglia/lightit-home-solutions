@@ -59,7 +59,7 @@ const Navigation = () => (
         </button>
         <button
           onClick={() =>
-            console.log("%Izquierda", "background-color: orange; color: white")
+            console.log("%cIzquierda", "background-color: orange; color: white")
           }
           name="left"
           className="w-5 h-5 absolute left-0 top-1/2 -translate-y-1/2 transition duration-300 ease-in-out transform hover:scale-125"
