@@ -3,7 +3,11 @@ import Navigation from "./";
 
 describe("Navigation", () => {
   test("renders buttons with correct labels", () => {
-    const { container, getByText, getByAltText } = render(<Navigation />);
+    const { container, getByText, getByAltText } = render(
+    <Navigation>
+      <Navigation.Buttons />
+      <Navigation.Controllers />
+    </Navigation>);
 
     const fijarButton = getByText("Fijar");
     const borrarButton = getByText("Borrar");

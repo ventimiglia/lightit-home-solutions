@@ -3,7 +3,7 @@
 exports[`Navigation renders buttons with correct labels 1`] = `
 <div>
   <aside
-    class="flex flex-col justify-between flex-1 items-end p-4"
+    class="flex flex-col justify-between flex-1 items-end p-4 relative"
   >
     <div
       class="flex gap-4"
@@ -20,7 +20,7 @@ exports[`Navigation renders buttons with correct labels 1`] = `
       </button>
     </div>
     <div
-      class="flex gap-4"
+      class="flex gap-4 absolute bottom-4"
     >
       <div
         class="flex flex-col flex-wrap justify-between bg-white rounded-md p-1"

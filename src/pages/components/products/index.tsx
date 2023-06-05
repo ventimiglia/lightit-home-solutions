@@ -100,7 +100,9 @@ const Products = () => {
                 <>
                   <Catalog>
                     <Catalog.Breadcrumb
-                      onClick={() => setProductDetail(ProductsDetailOptions.Categories)}
+                      onClick={() =>
+                        setProductDetail(ProductsDetailOptions.Categories)
+                      }
                     >{`< ${categorySelected}`}</Catalog.Breadcrumb>
                     <Catalog.Title>{productSelected?.name}</Catalog.Title>
                     <div className="grid grid-cols-3 gap-4 justify-items-center">
@@ -119,7 +121,21 @@ const Products = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <Navigation />
+      <Navigation>
+        <AnimatePresence>
+          {!!categorySelected && (
+            <motion.div
+              animate={{ x: 0, opacity: 1 }}
+              initial={{ x: -500, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              exit={{ x: -500, zIndex: -1, opacity: 0 }}
+            >
+              <Navigation.Buttons />
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <Navigation.Controllers />
+      </Navigation>
     </main>
   );
 };
