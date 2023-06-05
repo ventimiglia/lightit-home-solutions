@@ -24,7 +24,7 @@ const Sidebar = () => {
   const [productDetail, setProductDetail] = useState<ApiResponse>();
   const [menu, setMenu] = useState<MenuOptions | null>(null);
 
-  const { data, isLoading, error } = useQuery(
+  const { data, isLoading } = useQuery(
     ["products", selected],
     () => getProductsByCategory(selected),
     {
