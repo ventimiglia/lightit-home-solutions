@@ -1,10 +1,8 @@
-import "./styles.css";
-
 const Select = ({ options }: { options: string[] }) => (
   <div className="relative">
     <select className="py-3 pl-3 pr-14 text-primary rounded-md appearance-none text-sm focus:outline-none focus:border-none">
       {options.map((option) => (
-        <option key={option}>{option}</option>
+        <option role="option" key={option}>{option}</option>
       ))}
     </select>
     <div className="absolute top-0 right-0 flex items-center justify-center w-12 h-full pointer-events-none border-l-2 border-l-gray-medium"></div>

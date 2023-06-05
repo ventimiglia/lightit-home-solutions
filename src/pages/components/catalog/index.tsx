@@ -32,7 +32,7 @@ const Title = ({ children }: TitleProps) => (
 
 const Product = ({ src, name }: ProductProps) => (
   <article>
-    <img src={src} alt={name} className="h-36 object-contain mb-1" />
+    <img src={src} alt={name} className="h-36 object-contain mb-1"/>
     <p className="text-xs">{name}</p>
   </article>
 );

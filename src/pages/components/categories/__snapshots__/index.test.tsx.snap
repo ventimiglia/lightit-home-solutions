@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories renders the categories component 1`] = `
+<div>
+  <article
+    class="flex flex-col gap-4 w-full"
+  >
+    <h2
+      class="text-2xl font-bold capitalize text-left"
+    >
+      Title
+    </h2>
+    <button
+      class="flex items-center justify-between p-3 bg-white rounded-md w-full transition duration-300 ease-in-out hover:bg-primary hover:text-white transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary"
+    >
+      <span>
+        Category 1
+      </span>
+      <img
+        class="rotate-180"
+        src="chevron.png"
+        width="15"
+      />
+    </button>
+  </article>
+</div>
+`;

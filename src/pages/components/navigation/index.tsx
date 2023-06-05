@@ -26,7 +26,7 @@ const Navigation = () => (
           }
           className="transition duration-300 ease-in-out transform hover:scale-125"
         >
-          <img src="plus.png" width={22} />
+          <img src="plus.png" width={22} alt="plus"/>
         </button>
         <hr />
         <button
@@ -35,7 +35,7 @@ const Navigation = () => (
           }
           className="transition duration-300 ease-in-out transform hover:scale-125"
         >
-          <img src="less.png" width={22} />
+          <img src="less.png" width={22} alt="less"/>
         </button>
       </div>
       <div className="w-16 h-16 relative bg-white border-4 border-white rounded-md">
@@ -46,7 +46,7 @@ const Navigation = () => (
           name="up"
           className="w-5 h-5 absolute top-0 right-1/2 translate-x-1/2 transition duration-300 ease-in-out transform hover:scale-125"
         >
-          <img src="arrow.png" />
+          <img src="arrow.png" alt="up"/>
         </button>
         <button
           onClick={() =>
@@ -55,25 +55,25 @@ const Navigation = () => (
           name="right"
           className="w-5 h-5 absolute right-0 top-1/2 -translate-y-1/2 transition duration-300 ease-in-out transform hover:scale-125"
         >
-          <img src="arrow.png" className="rotate-90" />
+          <img src="arrow.png" className="rotate-90" alt="right"/>
         </button>
         <button
           onClick={() =>
-            console.log("%cIzquierda", "background-color: orange; color: white")
+            console.log("%Izquierda", "background-color: orange; color: white")
           }
-          name="down"
+          name="left"
           className="w-5 h-5 absolute left-0 top-1/2 -translate-y-1/2 transition duration-300 ease-in-out transform hover:scale-125"
         >
-          <img src="arrow.png" className="-rotate-90" />
+          <img src="arrow.png" className="-rotate-90" alt="left"/>
         </button>
         <button
           onClick={() =>
             console.log("%cAbajo", "background-color: orange; color: white")
           }
-          name="left"
+          name="down"
           className="w-5 h-5 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-300 ease-in-out transform hover:scale-125"
         >
-          <img src="arrow.png" className="rotate-180" />
+          <img src="arrow.png" className="rotate-180" alt="down"/>
         </button>
       </div>
     </div>

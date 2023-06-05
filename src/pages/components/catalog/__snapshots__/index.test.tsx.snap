@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Catalog renders the catalog component 1`] = `
+<div>
+  <div
+    class="w-full"
+  >
+    <h2
+      class="text-left font-bold text-lg mb-4"
+    >
+      Title
+    </h2>
+    <p
+      class="text-xs capitalize text-left w-full mb-2 cursor-pointer hover:underline"
+    >
+      Breadcrumb
+    </p>
+    <article>
+      <img
+        alt="Product Name"
+        class="h-36 object-contain mb-1"
+        src="image.jpg"
+      />
+      <p
+        class="text-xs"
+      >
+        Product Name
+      </p>
+    </article>
+  </div>
+</div>
+`;

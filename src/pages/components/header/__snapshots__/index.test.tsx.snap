@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders the header component 1`] = `
+<div>
+  <header
+    class="bg-gray-dark"
+  >
+    <div
+      class="flex justify-between items-center px-48 py-6 mx-auto"
+    >
+      <img
+        alt="logo"
+        src="logo.png"
+      />
+      <div
+        class="relative"
+      >
+        <select
+          class="py-3 pl-3 pr-14 text-primary rounded-md appearance-none text-sm focus:outline-none focus:border-none"
+        >
+          <option
+            role="option"
+          >
+            Guardar y Salir
+          </option>
+          <option
+            role="option"
+          >
+            Salir Sin Guardar
+          </option>
+          <option
+            role="option"
+          >
+            Guardar y Continuar
+          </option>
+        </select>
+        <div
+          class="absolute top-0 right-0 flex items-center justify-center w-12 h-full pointer-events-none border-l-2 border-l-gray-medium"
+        />
+        <img
+          class="absolute top-1/2 right-3 -rotate-90 -translate-y-1/2 pointer-events-none"
+          src="chevron.png"
+          width="25"
+        />
+      </div>
+    </div>
+  </header>
+</div>
+`;

@@ -29,7 +29,7 @@ const Products = () => {
   const [productDetail, setProductDetail] =
     useState<ProductsDetailOptions | null>(null);
 
-  const { data, isLoading } = useQuery(
+  const { data, isLoading, error } = useQuery(
     ["products", categorySelected],
     () => getProductsByCategory(categorySelected),
     {
@@ -86,6 +86,7 @@ const Products = () => {
                 <Categories>
                   <Categories.Title>{categorySelected}</Categories.Title>
                   {isLoading && <p>Cargando...</p>}
+                  {!!error && <p>Hubo un error</p>}
                   {!!data?.length &&
                     data?.map((item) => (
                       <Categories.Category
