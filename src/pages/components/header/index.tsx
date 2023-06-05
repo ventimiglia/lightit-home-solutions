@@ -1,6 +1,4 @@
-//background-color: rgb(51,51,51)
-
-import Select from "../select";
+import Select from "../../../components/select";
 
 const Header = () => (
   <header className="bg-gray-dark">

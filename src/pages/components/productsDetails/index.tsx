@@ -3,9 +3,9 @@ type Props = {
   onClose: () => void;
 };
 
-const Menu: React.FC<Props> = ({ children, onClose }) => {
+const ProductsDetails: React.FC<Props> = ({ children, onClose }) => {
   return (
-    <section className="flex bg-gray-light w-96 h-full p-4 text-primary flex-col items-start gap-4 z-50 relative">
+    <section className="flex bg-gray-light w-[30rem] h-full p-4 text-primary flex-col items-start gap-4 z-50 relative">
       {children}
       <div
         onClick={onClose}
@@ -20,4 +20,4 @@ const Menu: React.FC<Props> = ({ children, onClose }) => {
   );
 };
 
-export default Menu;
+export default ProductsDetails;

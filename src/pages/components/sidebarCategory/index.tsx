@@ -7,7 +7,7 @@ type Props = {
   active?: boolean;
 };
 
-const SidebarProduct = ({ title, icon, onClick, active = false }: Props) => (
+const SidebarCategory = ({ title, icon, onClick, active = false }: Props) => (
   <div
     className={cx(
       "flex flex-col items-center justify-center w-full relative h-24 cursor-pointer",
@@ -21,8 +21,8 @@ const SidebarProduct = ({ title, icon, onClick, active = false }: Props) => (
     onClick={onClick}
   >
     <img src={icon} width={55} className="transition duration-600 ease-in-out transform hover:scale-110"/>
-    <span className="text-sm text-primary">{title}</span>
+    <span className="text-sm text-primary capitalize">{title}</span>
   </div>
 );
 
-export default SidebarProduct;
+export default SidebarCategory;

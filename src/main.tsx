@@ -4,16 +4,15 @@ import {
   QueryClient,
   QueryClientProvider,
 } from 'react-query'
-import App from "./App.tsx";
+import Home from "./pages";
 import "./index.css";
 
 const queryClient = new QueryClient()
 
-
 createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <Home />
     </QueryClientProvider>
   </StrictMode>
 );
