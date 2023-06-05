@@ -55,19 +55,19 @@ const Sidebar = () => {
       <section className="flex flex-col justify-center items-center w-28 h-full bg-white">
         <SidebarProduct
           title="Aberturas"
-          icon="src/assets/opening.png"
+          icon="opening.png"
           onClick={() => handleSidebar(Products.Opening)}
           active={selected === Products.Opening}
         />
         <SidebarProduct
           title="Equipamiento"
-          icon="src/assets/equipment.png"
+          icon="equipment.png"
           onClick={() => handleSidebar(Products.Equipment)}
           active={selected === Products.Equipment}
         />
         <SidebarProduct
           title="Terminaciones"
-          icon="src/assets/finishes.png"
+          icon="finishes.png"
           onClick={() => handleSidebar(Products.Finishes)}
           active={selected === Products.Finishes}
         />
@@ -95,7 +95,7 @@ const Sidebar = () => {
                         <span>{item.name}</span>
                         <img
                           className="rotate-180"
-                          src="./src/assets/chevron.png"
+                          src="chevron.png"
                           width={15}
                         />
                       </button>
@@ -136,11 +136,11 @@ const Sidebar = () => {
         <div className="flex gap-4">
           <div className="flex flex-col flex-wrap justify-between bg-white rounded-md p-1">
             <button className="transition duration-300 ease-in-out transform hover:scale-125">
-              <img src="src/assets/plus.png" width={22} />
+              <img src="plus.png" width={22} />
             </button>
             <hr />
             <button className="transition duration-300 ease-in-out transform hover:scale-125">
-              <img src="src/assets/less.png" width={22} />
+              <img src="less.png" width={22} />
             </button>
           </div>
           <div className="w-16 h-16 relative bg-white border-4 border-white rounded-md">
@@ -148,25 +148,25 @@ const Sidebar = () => {
               name="up"
               className="w-5 h-5 absolute top-0 right-1/2 translate-x-1/2 transition duration-300 ease-in-out transform hover:scale-125"
             >
-              <img src="src/assets/arrow.png" />
+              <img src="arrow.png" />
             </button>
             <button
               name="right"
               className="w-5 h-5 absolute right-0 top-1/2 -translate-y-1/2 transition duration-300 ease-in-out transform hover:scale-125"
             >
-              <img src="src/assets/arrow.png" className="rotate-90" />
+              <img src="arrow.png" className="rotate-90" />
             </button>
             <button
               name="down"
               className="w-5 h-5 absolute left-0 top-1/2 -translate-y-1/2 transition duration-300 ease-in-out transform hover:scale-125"
             >
-              <img src="src/assets/arrow.png" className="-rotate-90" />
+              <img src="arrow.png" className="-rotate-90" />
             </button>
             <button
               name="left"
               className="w-5 h-5 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-300 ease-in-out transform hover:scale-125"
             >
-              <img src="src/assets/arrow.png" className="rotate-180" />
+              <img src="arrow.png" className="rotate-180" />
             </button>
           </div>
         </div>

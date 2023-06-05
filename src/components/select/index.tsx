@@ -9,7 +9,7 @@ const Select = ({ options }: { options: string[] }) => (
     </select>
     <div className="absolute top-0 right-0 flex items-center justify-center w-12 h-full pointer-events-none border-l-2 border-l-gray-medium"></div>
     <img
-      src="src/assets/chevron.png"
+      src="chevron.png"
       className="absolute top-1/2 right-3 -rotate-90 -translate-y-1/2 pointer-events-none"
       width={25}
     />
